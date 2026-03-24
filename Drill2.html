@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Heat Index Checker</title>
+
+    <style>
+        body {
+            background-image: url(https://t4.ftcdn.net/jpg/01/69/21/23/360_F_169212353_Aha6NBRwfuYjefWRwcrMj89QOYpDSNyT.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height:100vh;">
+    
+    <div class="p-5 rounded shadow text-center"
+         style="width:100%; max-width:600px; background-color:rgba(255,255,255,0.85);">
+        <h1 class="mb-4" style="color:#0c2d55;">Heat Index Checker</h1>
+        <input type="number" id="temperature" class="form-control mb-3" placeholder="Enter Temperature (°C)">
+        <input type="number" id="humidity" class="form-control mb-3" placeholder="Enter Humidity (%)">
+        <button onclick="calculateHeatIndex()" class="btn btn-primary w-100 mb-3">
+            Check Heat Index
+        </button>
+
+        <div id="result" class="fw-bold" style="font-size:20px; color:#fe6400;"></div>
+    
+    </div>
+
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
+
